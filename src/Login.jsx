@@ -1,5 +1,5 @@
-import React from 'react';
-import { loginWithGoogle } from './firebase/authService';
+import { auth } from './firebase.js';
+import { loginUser } from './authService.js';
 
 export default function Login({ onLoginSuccess }) {
   const handleLogin = async () => {
